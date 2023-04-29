@@ -1,0 +1,16 @@
+ private void moveCar(object sender, KeyEventArgs e)
+        {
+            //if the player pressed the left key AND the player is inside the panel
+            // then we set the car left boolean to true
+            if (e.KeyCode == Keys.Left && player.Left > 0)
+            {
+                carLeft = true;
+            }
+// if player pressed the right key and the player left plus player width is less then the panel1 width
+            // then we set the player right to true
+            if (e.KeyCode == Keys.Right && player.Left + player.Width < panel1.Width)
+            {
+                carRight = true;
+            }
+        }
+        

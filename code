@@ -1,0 +1,25 @@
+        private void Reset()
+        {
+            trophy.Visible = false; // hide the trophy image
+            button1.Enabled = false; // disable the button when game is running
+            explosion.Visible = false; // hide the explosion image
+            trafficSpeed = 5; // set the traffic back to default
+            roadSpeed = 5; // set the road speed back to default
+            Score = 0; // reset score to 0
+            player.Left = 161; // reset player left
+            player.Top = 286; // reset player top
+            carLeft = false; // reset the moving left to false
+            carRight = false; // reset the moving right to false
+            // move the AI to default position this will be off the screen
+            AI1.Left = 66; 
+            AI1.Top = -120;
+            AI2.Left = 294;
+            AI2.Top = -185;
+            //reset the road to their default position
+            roadTrack2.Left = -3;
+            roadTrack2.Top = -222;
+            roadTrack1.Left = -2;
+            roadTrack1.Top = -638;
+            //start the timer
+            timer1.Start();
+        }

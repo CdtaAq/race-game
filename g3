@@ -1,0 +1,13 @@
+private void stopCar(object sender, KeyEventArgs e)
+        {
+            // if the LEFT key is up we set the car left to false
+            if (e.KeyCode == Keys.Left)
+            {
+                carLeft = false;
+            }
+            // if the RIGHT key is up we set the car right to false
+            if (e.KeyCode == Keys.Right)
+            {
+                carRight = false;
+            }
+        }

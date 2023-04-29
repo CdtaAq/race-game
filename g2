@@ -1,0 +1,45 @@
+        private void changeAI1()
+        {
+            int num = rnd.Next(1, 8); // we set up a local variable to generate a number between 1 and 8
+            // by using a switch statement we can show any image based on that number
+            // switch statement will check which number has been generated and will displayer the images as requested
+            switch (num)
+            {
+                 // if the number generated is 1 we show the green car
+                case 1:
+                    AI1.Image = Properties.Resources.carGreen;
+                    break;
+                // if the number generated is 2 we show the grey car
+                case 2:
+                    AI1.Image = Properties.Resources.carGrey;
+                    break;
+                // if the number generated is 3 we show the orange car
+                case 3:
+                    AI1.Image = Properties.Resources.carOrange;
+                    break;
+                // if the number generated is 4 we show the pink car
+                case 4:
+                    AI1.Image = Properties.Resources.carPink;
+                    break;
+                // if the number generated is 5 we show the red car
+                case 5:
+                    AI1.Image = Properties.Resources.CarRed;
+                    break;
+                // if the number generated is 6 we show the blue truck
+                case 6:
+                    AI1.Image = Properties.Resources.TruckBlue;
+                    break;
+                // if the number generated is 7 we show the white truck
+                case 7:
+                    AI1.Image = Properties.Resources.TruckWhite;
+                    break;
+                // if the number generated is 8 we show the ambulance
+                // this is why its important to name your images so they make logical sense
+                case 8:
+                    AI1.Image = Properties.Resources.ambulance;
+                    break;
+                default:
+                    break;
+            }
+        }
+        

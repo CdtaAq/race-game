@@ -1,0 +1,28 @@
+   private void gameOver()
+        {
+            trophy.Visible = true; // change the trophy to visible
+            timer1.Stop(); // stop the timer
+            button1.Enabled = true; // enable the button so we can use it now
+            //showing the explosion image on top of the car image
+            explosion.Visible = true; // make the image visible
+            player.Controls.Add(explosion); // add the explosion image on top of the player image
+            explosion.Location = new Point(-8, 5); // we are moving the image so its suitably positioned
+            explosion.BackColor = Color.Transparent; // change the background to transparent
+            explosion.BringToFront();// bring to front of the player image
+            // final score trophy
+            // if the player score less than a 1000 we give them a bronze
+            if (Score < 1000)
+            {
+                trophy.Image = Properties.Resources.bronze;
+            }
+            // if player scored more than 2000 then give them a silver
+            if (Score > 2000)
+            {
+                trophy.Image = Properties.Resources.silver;
+            }
+            // if player scored more than 3500 then give them a gold trophy
+            if (Score > 3500)
+            {
+                trophy.Image = Properties.Resources.gold;
+            }
+        }
